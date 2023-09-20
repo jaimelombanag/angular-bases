@@ -17,8 +17,10 @@ export class ListComponent {
     power: 10
   }];
 
-  public onDeleteCharacter(id: string):void{
-    //TODO: Emitir el Id del personaje
+  public onDeleteCharacter(id?: string):void{
+
+    if( !id ) return;
+
     console.log({id});
     this.onDelete.emit(id);
 
