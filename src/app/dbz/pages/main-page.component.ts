@@ -22,6 +22,11 @@ export class MainPageComponent {
       name: "Vegeta",
       power: 7500
      }
-];
+  ];
+
+  onNewCharacter( character: Character):void{
+    this.characters.push(character);      //Al final de la lista
+    //this.characters.unshift(character);   //Al iniciio de la lista
+  }
 
 }
