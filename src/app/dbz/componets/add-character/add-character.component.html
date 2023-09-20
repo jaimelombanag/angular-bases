@@ -9,12 +9,12 @@
 
   <input
     type="number"
-    [(ngModel)]="character.name"
+    [(ngModel)]="character.power"
     name="power"
     class="form-control mb-2"
     placeholder="Poder">
 
-  <button type="submit" class="btn btn-primary">
+  <button type="submit" class="btn btn-primary" (click)="emitCharacter()">
     Agregar
   </button>
 

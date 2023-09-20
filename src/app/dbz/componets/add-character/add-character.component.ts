@@ -13,4 +13,8 @@ export class AddCharacterComponent {
     power: 0
   };
 
+  emitCharacter(){
+    console.log(this.character);
+  }
+
 }
