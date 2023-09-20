@@ -29,4 +29,8 @@ export class MainPageComponent {
     //this.characters.unshift(character);   //Al iniciio de la lista
   }
 
+  onDeleteCharacter(index: number): void{
+    this.characters.splice(index, 1);
+  }
+
 }
